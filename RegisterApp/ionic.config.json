@@ -1,0 +1,7 @@
+{
+  "name": "RegisterApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
