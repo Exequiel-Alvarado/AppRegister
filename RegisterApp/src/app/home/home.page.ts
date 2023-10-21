@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import{}from '../'
+import{ apiService }from '../servicios/api.service'
 
 @Component({
   selector: 'app-home',
@@ -8,6 +8,7 @@ import{}from '../'
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    ) {}
 
 }
