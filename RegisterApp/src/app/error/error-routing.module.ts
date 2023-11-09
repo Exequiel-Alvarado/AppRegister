@@ -5,9 +5,7 @@ import { ErrorPage } from './error.page';
 
 const routes: Routes = [
   {
-    path: '',
-    component: ErrorPage
-  }
+    path: '', redirectTo: '/login', pathMatch:'full' },{ path: '**', component: ErrorPage}
 ];
 
 @NgModule({
