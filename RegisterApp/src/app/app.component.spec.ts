@@ -1,7 +1,8 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { LoginPage } from './login/login.page';
 
 describe('AppComponent', () => {
 
@@ -19,3 +20,5 @@ describe('AppComponent', () => {
   });
 
 });
+
+
