@@ -58,3 +58,6 @@ npm install firebase angularfire2 --save
 creamos un servicio en donde hay vamos a meter datos
 
 ionic g s services/firestore
+
+7° se realizan pruebas de datos en tiempo real
+
