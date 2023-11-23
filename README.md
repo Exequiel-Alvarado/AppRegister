@@ -51,3 +51,6 @@ const analytics = getAnalytics(app);
 ionic generate component PruebaBaseFirebase
 
 
+npm install firebase angularfire2 --save
+
+
