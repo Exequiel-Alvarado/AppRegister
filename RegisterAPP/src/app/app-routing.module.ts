@@ -66,7 +66,15 @@ const routes: Routes = [
   {
     path: 'menu-asist-prof',
     loadChildren: () => import('./menuexe/prof/menu-asist-prof/menu-asist-prof.module').then( m => m.MenuAsistProfPageModule)
+  },  {
+    path: 'error',
+    loadChildren: () => import('./error/error.module').then( m => m.ErrorPageModule)
+  },
+  {
+    path: 'guard',
+    loadChildren: () => import('./guard/guard.module').then( m => m.GuardPageModule)
   }
+
  
 ];
 
