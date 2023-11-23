@@ -54,3 +54,7 @@ ionic generate component PruebaBaseFirebase
 npm install firebase angularfire2 --save
 
 
+6° vamos a meter datos
+creamos un servicio en donde hay vamos a meter datos
+
+ionic g s services/firestore

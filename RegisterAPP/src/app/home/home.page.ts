@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { FirestoreService } from '../services/firestore.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public popoverController: PopoverController,
+              private firestore: FirestoreService) {}
+
+  getEstudiantes(){
+    this.firestore.getColletion()
+  }
 
 }
