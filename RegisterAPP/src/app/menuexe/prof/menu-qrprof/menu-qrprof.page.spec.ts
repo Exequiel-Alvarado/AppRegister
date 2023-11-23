@@ -5,11 +5,11 @@ describe('MenuQRProfPage', () => {
   let component: MenuQRProfPage;
   let fixture: ComponentFixture<MenuQRProfPage>;
 
-  beforeEach(async(() => {
+  beforeEach(async() => {
     fixture = TestBed.createComponent(MenuQRProfPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
