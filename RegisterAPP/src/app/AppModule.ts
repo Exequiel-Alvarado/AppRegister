@@ -9,7 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { AngularFirestoreModule} from '@angular/fire/compat/firestore'
+import { AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { AngularFirestoreModule} from '@angular/fire/compat/firestore'
             AppRoutingModule,
             AngularFireModule.initializeApp(environment.firebaseConfig),
             AngularFireAuthModule,
-            AngularFirestoreModule
+            AngularFirestoreModule,
+            BrowserAnimationsModule
           ],
            
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
