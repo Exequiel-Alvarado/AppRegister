@@ -63,3 +63,20 @@ ionic g s services/firestore
 
 8° se habilita dependencia para angular materia
 npm config set legacy-peer-deps true
+
+9° vamos a entrar con login para las validaciones
+
+firebase login
+
+logiamo con nuestra cuenta de firebase
+
+corremos el projecto
+
+ng add @angular/fire
+
+selecionamos el de authetificacion
+
+selecionamos nuestro projecto
+
+
+creamos 2 archivos en app/firebase.config.ts y app.config.ts

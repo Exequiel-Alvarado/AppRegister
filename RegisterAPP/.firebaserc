@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "registerapp-v2": {
+      "hosting": {
+        "app": [
+          "registerapp-v2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "registerapp-v2"
+  }
+}
