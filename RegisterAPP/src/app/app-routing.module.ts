@@ -1,36 +1,28 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+import { LoginComponent } from './components/login/login.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AuthGuard } from './shared/guards/auth.guard';
+
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'login',
-    loadChildren: () => import('./loginexe/login/login.module').then( m => m.LoginPageModule)
-  },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'sign-up', component: SignUpComponent },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+ 
+  
   {
     path: 'test',
     loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
   },
-  {
-    path: 'intro',
-    loadChildren: () => import('./inoutexe/intro/intro.module').then( m => m.IntroPageModule)
-  },
+
   {
     path: 'menu',
     loadChildren: () => import('./menuexe/alumns/menu/menu.module').then( m => m.MenuPageModule)
   },
-  {
-    path: 'out',
-    loadChildren: () => import('./inoutexe/out/out.module').then( m => m.OutPageModule)
-  },
+
   {
     path: 'menu-scan-alumn',
     loadChildren: () => import('./menuexe/alumns/menu-scan-alumn/menu-scan-alumn.module').then( m => m.MenuScanAlumnPageModule)
@@ -43,14 +35,8 @@ const routes: Routes = [
     path: 'menu-asist-alumn-details',
     loadChildren: () => import('./menuexe/alumns/menu-asist-alumn-details/menu-asist-alumn-details.module').then( m => m.MenuAsistAlumnDetailsPageModule)
   },
-  {
-    path: 'login-password',
-    loadChildren: () => import('./loginexe/login-password/login-password.module').then( m => m.LoginPasswordPageModule)
-  },
-  {
-    path: 'register',
-    loadChildren: () => import('./loginexe/register/register.module').then( m => m.RegisterPageModule)
-  },
+ 
+ 
   {
     path: 'menu-prof',
     loadChildren: () => import('./menuexe/prof/menu-prof/menu-prof.module').then( m => m.MenuProfPageModule)

@@ -80,3 +80,9 @@ selecionamos nuestro projecto
 
 
 creamos 2 archivos en app/firebase.config.ts y app.config.ts
+
+10° error vamos con tailwinds
+
+ npm install -D tailwindcss postcss autoprefixer
+
+ npx tailwindcss init
