@@ -5,11 +5,11 @@ describe('MenuAddClassProfPage', () => {
   let component: MenuAddClassProfPage;
   let fixture: ComponentFixture<MenuAddClassProfPage>;
 
-  beforeEach(async(() => {
+  beforeEach(async() => {
     fixture = TestBed.createComponent(MenuAddClassProfPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
