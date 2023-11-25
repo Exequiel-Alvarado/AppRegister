@@ -61,3 +61,5 @@ ionic g s services/firestore
 
 7° se realizan pruebas de datos en tiempo real
 
+8° se habilita dependencia para angular materia
+npm config set legacy-peer-deps true
