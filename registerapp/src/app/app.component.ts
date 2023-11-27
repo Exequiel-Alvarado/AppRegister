@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+// app.component.ts
 
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  // Asegúrate de que scanQR esté definido aquí
+  constructor() {
+    // Implementación de la función scanQR
+  }
 }
