@@ -5,11 +5,11 @@ describe('PasswordRecoveryPage', () => {
   let component: PasswordRecoveryPage;
   let fixture: ComponentFixture<PasswordRecoveryPage>;
 
-  beforeEach(async(() => {
+  beforeEach(async() => {
     fixture = TestBed.createComponent(PasswordRecoveryPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();

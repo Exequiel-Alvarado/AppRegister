@@ -8,9 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Importa los módulos de Firebase adecuados
-import { AngularFireModule } from '@angular/fire/compat'; 
+import { AngularFireModule } from '@angular/fire/compat/'; 
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore'; 
-import { environment } from 'src/environments/firebaseConfig';  // Cambiado aquí
+import { environment } from 'src/environments/environment';  // Cambiado aquí
 
 @NgModule({
   declarations: [

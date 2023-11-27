@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/",
             "outputPath": "www",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -83,7 +84,7 @@
               "buildTarget": "app:build:development"
             },
             "ci": {
-              "progress": false
+      
             }
           },
           "defaultConfiguration": "development"
